@@ -1,0 +1,83 @@
+<html ng-app>
+    <head>
+        <meta charset="utf8" />
+        <title>一个博客</title>
+        <link type="text/css" href="css/basic.css" rel="stylesheet" />
+        <script src="script/angular-1.0.1.min.js"></script>
+        <script src="script/controller.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="header-main">
+                <div class="header-image">
+                    <img src="images/me.png"  alt="一个博客" />
+                </div>
+                <div class="header-title">一个博客</div>
+                <div class="header-nav">
+                    <ul>
+                        <li><a href="/">首页</a></li>
+                        <li><a href="/">随笔</a></li>
+                        <li><a href="/">技术</a></li>
+                        <li><a href="/">美文</a></li>
+                        <li><a href="/">相册</a></li>
+                        <li><a href="/">关于</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form action="#">
+                        <input type="text" placeholder="搜  索" />
+                        <button type="submit">
+                            <div></div>
+                        </button>
+                    </form>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </header>
+        <Content></Content>
+        <footer>
+            <div class="footer-shadow"></div>
+            <div class="footer-main">
+                <div>
+                    <h1>开怀一笑</h1>
+                    <ul>
+                        <li><img src="images/laugh.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                        <li><img src="images/laugh.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                        <li><img src="images/laugh.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                        <li><img src="images/laugh.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                        <li><img src="images/laugh.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>今日景点</h1>
+                    <ul>
+                        <li><img src="images/scenic.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                        <li><img src="images/scenic.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                        <li><img src="images/scenic.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                        <li><img src="images/scenic.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                        <li><img src="images/scenic.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1>今日文章</h1>
+                    <ul>
+                        <li><img src="images/article.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                        <li><img src="images/article.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                        <li><img src="images/article.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                        <li><img src="images/article.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                        <li><img src="images/article.png" /><a href="/" target="_blank">我一朋友，叫X超</a></li>
+                    </ul>
+                </div>
+                <div ng-controller="AlmanacController">
+                    <h1>今日黄历</h1>
+                    <ul>
+                        <li ng-repeat="almanac in almanacs"><img src="images/almanac.png" /><a href="{{almanac.Url}}" target="_blank">{{almanac.Title}}</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-about">
+                <span>Powered by <a href="http://www.liguifa.wang" target="_blank">李贵发</a> Copyright © 2011 - 2016 一个博客</span>
+            </div>
+        </footer>
+    </body>
+</html>

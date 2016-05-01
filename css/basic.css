@@ -1,0 +1,197 @@
+@font-face {
+    font-family:"文悦聚珍仿宋";
+    src: url("../font/文悦聚珍仿宋.ttf")  format('truetype')
+}
+body{
+    margin:0px;
+    padding:0px;
+}
+*{
+    font-family:"文悦聚珍仿宋";
+}
+header{
+    height:557px;
+    width:100%;
+    background-image:url("../images/header.png");
+    background-repeat:repeat-x;
+}
+.header-main{
+    width:73%;
+    height:100%;
+    margin:auto;
+}
+.header-main div{
+    float:left;
+}
+.header-image{
+    width:50px;
+    height:50px;
+}
+.header-image img{
+    margin-top:2px;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:5pt #3B3D40 solid;
+    box-shadow:1px 1px 1px 1px #111;
+}
+.header-title{
+    height:29px;
+    width:107px;
+    margin-left:14px;
+    margin-top:13px;
+    text-align:center;
+    padding-top:2px;
+    background:#3b3d40;
+    border-radius:50%;
+    color:#ED8919;
+    font-weight:bold;
+    font-size:14px;
+    box-shadow:1px 1px 1px #111;
+    text-shadow:1px 1px 1px #111;
+}
+.header-nav{
+}
+.header-nav ul{
+    list-style:none;
+    margin-top:12px;
+}
+.header-nav ul li{
+    float:left;
+    margin:0 10px;
+}
+.header-nav ul li a{
+    text-decoration:none;
+    color:#3B3D40;
+    font-size:14px;
+    font-weight:bold;
+    text-shadow:2px 2px 2px #111111;
+}
+.header-nav ul li a:hover{
+    color:#ED8919;
+    text-shadow:8px 8px 18px #111111;
+}
+.header-search{
+    float:right !important;
+    margin-top:12px;
+}
+.header-search form{
+    box-shadow:1px 1px 1px #111111;
+    border-radius:50px;
+    border:#38373C solid 1px;
+}
+.header-search input{
+    background:#242828;
+    width:150px;
+    height:24px;
+    outline:none;
+    border-radius:50px 0px 0px 50px;
+    border:#38373C solid 1px;
+    border-right:none;
+    padding-left:10px;
+    color:#60676D;
+}
+.header-search button{
+    width:30px;
+    height:24px;
+    background-image:url("../images/search.png");
+    outline:none;
+    border-radius:0px 50px 50px 0px;
+    border:#38373C solid 1px;
+    border-left:none;
+    background-repeat:no-repeat;
+    background:#242828;
+    float:right;
+    cursor:pointer;
+}
+.header-search button div{
+    width:16px;
+    height:16px;
+    background-image:url("../images/search.png");
+    background-size:16px 16px;
+    background-repeat:no-repeat;
+}
+.header-search button div:hover{
+    background-image:url("../images/search-hover.png");
+}
+footer{
+    height:425px;
+    width:100%;
+    background-image:url("../images/slide.jpg");
+    background-repeat:repeat;
+}
+.footer-shadow{
+    background-image:url("../images/footershadow.png");
+    background-repeat:repeat-x;
+    height:20px;
+}
+.footer-main{
+    height:367px;
+    width:73%;
+    margin:auto;
+}
+.footer-main div{
+    width:226px;
+    padding:10px;
+    float:left;
+    margin:0px;
+}
+.footer-main div h1{
+    background:url("../images/ftbg.png");
+    background-repeat:no-repeat;
+    background-position:bottom;
+    font-size:18px;
+    text-align:center;
+    color:#ED8919;
+    font-weight:bold;
+}
+.footer-main div ul{
+    list-style:none;
+    margin:auto;
+}
+.footer-main div ul li{
+    height:40px;
+    border-bottom:1px #191B1E inset;
+    text-align:left;
+    padding-top:10px;
+}
+.footer-main div ul li img{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+    box-shadow:1px 1px 0px  #111;
+    float:left;
+    margin-top:6px;
+    margin-right:5px;
+}
+.footer-main div ul li a{
+    color:#5A626A;
+    text-decoration:none;
+    font-weight:bold;
+    text-shadow:1px 1px 1px #111111;
+    font-size:15px;
+}
+.footer-about{
+    background-image:url("../images/crbg.png");
+    background-repeat:repeat;
+    height:40px;
+    text-align:center;
+    padding-top:10px;
+}
+.footer-about span,.footer-about a{
+    font-size:14px;
+    text-decoration:none;
+    text-shadow:1px 1px 1px #111111;
+    color:#3B3D40;
+    font-weight:bold;
+}
+.footer-about a:hover{
+    color:#ED8919;
+    text-shadow:2px 2px 2px #111111;
+}
+Content{
+    height:500px;
+}
+.clear{
+    clear:both;
+}

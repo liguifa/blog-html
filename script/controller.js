@@ -14,7 +14,7 @@ function AlmanacController($scope)
     for(var i=0;i<5;i++)
     {
         var isShould = data*(i+1)%2 == 0?"宜":"忌";
-        var index = (data*(i+1))%almanacs.length;
+        var index = (data*(i+1)+i)%almanacs.length;
         var row = almanacs[index];
         row.Title = isShould+":"+row.Title;
         $scope.almanacs[i] = row;
